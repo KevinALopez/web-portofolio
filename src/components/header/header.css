@@ -1,0 +1,8 @@
+.navbar {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
