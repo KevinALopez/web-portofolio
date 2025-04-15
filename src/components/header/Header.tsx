@@ -24,11 +24,10 @@ function Header() {
                 <Navbar.Toggle aria-controls="header-navbar-nav" />
                 <Navbar.Collapse id="header-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home">Proyectos</Nav.Link>
-                        <Nav.Link href="#link">Experiencia</Nav.Link>
-                        <Nav.Link href="#link">Acerca de mi</Nav.Link>
-                        <Nav.Link href="#link">Contacto</Nav.Link>
-                        <Nav.Link href="#link" onClick={toggleTheme}>
+                        <Nav.Link href="#projects">Proyectos</Nav.Link>
+                        <Nav.Link href="#experience">Experiencia</Nav.Link>
+                        <Nav.Link href="#about">Acerca de mi</Nav.Link>
+                        <Nav.Link onClick={toggleTheme}>
                             {theme === "dark" ? (
                                 <DarkModeIcon className="mode-toggle" />
                             ) : (
