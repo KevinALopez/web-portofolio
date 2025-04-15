@@ -6,3 +6,11 @@
 .nav-link {
     color: var(--text-color) !important;
 }
+
+.mode-toggle {
+    cursor: pointer;
+    color: var(--accent-color);
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+}

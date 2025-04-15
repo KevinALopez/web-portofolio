@@ -24,15 +24,15 @@ function Header() {
                 <Navbar.Toggle aria-controls="header-navbar-nav" />
                 <Navbar.Collapse id="header-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home">Projects</Nav.Link>
-                        <Nav.Link href="#link">Experience</Nav.Link>
-                        <Nav.Link href="#link">About</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
+                        <Nav.Link href="#home">Proyectos</Nav.Link>
+                        <Nav.Link href="#link">Experiencia</Nav.Link>
+                        <Nav.Link href="#link">Acerca de mi</Nav.Link>
+                        <Nav.Link href="#link">Contacto</Nav.Link>
                         <Nav.Link href="#link" onClick={toggleTheme}>
                             {theme === "dark" ? (
-                                <DarkModeIcon />
+                                <DarkModeIcon className="mode-toggle" />
                             ) : (
-                                <LightModeIcon />
+                                <LightModeIcon className="mode-toggle" />
                             )}
                         </Nav.Link>
                     </Nav>
@@ -42,12 +42,13 @@ function Header() {
     );
 }
 
-const DarkModeIcon = () => {
+const DarkModeIcon = ({ className = "" }: { className: string }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
+            className={className}
             fill="currentColor"
             viewBox="0 0 16 16"
         >
@@ -57,12 +58,13 @@ const DarkModeIcon = () => {
     );
 };
 
-const LightModeIcon = () => {
+const LightModeIcon = ({ className = "" }: { className: string }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
+            className={className}
             fill="currentColor"
             viewBox="0 0 16 16"
         >
