@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import ProjectList from "./components/project-list/ProjectList";
+import ExperienceList from "./components/experience-list/ExperienceList";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Header />
             <Hero />
             <ProjectList />
+            <ExperienceList />
         </>
     );
 }
