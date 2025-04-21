@@ -4,7 +4,11 @@ import hero from "../../assets/hero-gibli-image-close.png";
 
 function Hero() {
     return (
-        <section className="hero text-center section" data-aos="fade-up">
+        <section
+            id="home"
+            className="hero text-center section"
+            data-aos="fade-up"
+        >
             <img src={hero} alt="Gibli style cover" className="profile-image" />
             <h1>
                 <ReactTyped

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Expansion Alumet Pagina Web",
+        "descrption": "Mi primera pagina web hecha de manera profesional, tiene mucho que se puede mejorar pero fue la primera vez que pude aplciar lo que he estudiado de manera practica. Se puede apreciar cuanto he aprendido desde la creacion de esta pagina.",
+        "img": "src/assets/expansion-alumet-cover.png",
+        "webLink": "https://expansionalumet.com/",
+        "github": null,
+        "sourceCode": null,
+        "technologies": ["react", "typescript", "tailwind", "aws"]
+    }
+]
