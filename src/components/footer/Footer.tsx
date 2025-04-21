@@ -5,9 +5,7 @@ function Footer() {
         <div className="container-fluid border-top">
             <footer className="d-flex flex-wrap justify-content-between align-items-center py-1 my-4 container">
                 <div className="col-md-4 d-flex align-items-center">
-                    <span className="mb-3 mb-md-0 text-muted">
-                        &copy; {currentYear} Kevin Ayala
-                    </span>
+                    <span className="mb-3 mb-md-0 text-muted">Kevin Ayala</span>
                 </div>
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li className="ms-3">
@@ -25,8 +23,6 @@ function Footer() {
         </div>
     );
 }
-
-const currentYear = new Date().getFullYear();
 
 const GitHubIcon = ({ className = "" }: { className: string }) => {
     return (
