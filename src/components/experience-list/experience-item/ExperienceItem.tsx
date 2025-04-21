@@ -1,18 +1,36 @@
+import { Card } from "react-bootstrap";
 import "./experience-item.css";
 
-function ExperienceItem() {
+type IExperience = {
+    position: string;
+    company: string;
+    companyLink: string;
+    date: string;
+    description: string;
+};
+
+type ExperienceItemProps = {
+    experience: IExperience;
+};
+
+function ExperienceItem({ experience }: ExperienceItemProps) {
     return (
-        <div className="card p-4">
-            <h5 className="text-primary">
-                Web Development Intern – CoolCompany Inc.
-            </h5>
-            <p className="text-muted mb-1">Jan 2024 – Mar 2024</p>
-            <p className="text-muted">
-                Worked on front-end components, contributed to live features,
-                and learned the ins and outs of building production-grade apps
-                in a team.
-            </p>
-        </div>
+        <Card className="p-4">
+            <Card.Title className="text-primary">
+                {experience.position + " - " + experience.company}
+            </Card.Title>
+            <Card.Link
+                href={experience.companyLink}
+                target="_blank"
+                className="text-muted"
+            >
+                {experience.company}
+            </Card.Link>
+            <Card.Text className="text-muted mb-1">{experience.date}</Card.Text>
+            <Card.Text className="text-muted">
+                {experience.description}
+            </Card.Text>
+        </Card>
     );
 }
 

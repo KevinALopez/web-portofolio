@@ -4,7 +4,7 @@ import ReactIcon from "../../icons/ReactIcon";
 import TypescriptIcon from "../../icons/TypescriptIcon";
 import TailwindCssIcon from "../../icons/TailwindCssIcon";
 import AwsIcon from "../../icons/AwsIcon";
-import GitHubIcon from "../../icons/GithubIcon";
+import GitHubIcon from "../../icons/GitHubIcon";
 
 const icons = {
     react: <ReactIcon className="tech-icon" />,
