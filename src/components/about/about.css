@@ -5,3 +5,7 @@
 .section {
     padding: 5rem 1rem;
 }
+
+.about-text {
+    max-width: 1000px;
+}

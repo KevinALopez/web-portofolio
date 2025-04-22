@@ -12,7 +12,7 @@ function ExperienceList() {
                 y: 0,
                 transition: { delay: 0.2, duration: 0.5 },
             }}
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.4 }}
             id="experience"
             className="section container"
         >

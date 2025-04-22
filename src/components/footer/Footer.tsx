@@ -1,4 +1,4 @@
-import GitHubIcon from "../icons/GithubIcon";
+import GitHubIcon from "../icons/GitHubIcon";
 import LinkedInIcon from "../icons/LinkedInIcon";
 import "./footer.css";
 
