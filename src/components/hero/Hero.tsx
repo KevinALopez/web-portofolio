@@ -1,6 +1,8 @@
 import "./hero.css";
 import { ReactTyped } from "react-typed";
 import hero from "../../assets/hero-gibli-image-close.png";
+import { motion } from "motion/react";
+import { ChevronDown } from "lucide-react";
 
 function Hero() {
     return (
@@ -32,6 +34,13 @@ function Hero() {
             <a href="#projects" className="btn btn-accent mt-4 px-4 py-2">
                 Mis Proyectos
             </a>
+            <motion.div
+                className="mt-5 flex justify-center"
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+            >
+                <ChevronDown size={32} className="text-muted" />
+            </motion.div>
         </section>
     );
 }
