@@ -6,7 +6,12 @@ import { useState } from "react";
 import DarkModeIcon from "../icons/DarkModeIcon";
 import LightModeIcon from "../icons/LightModeIcon";
 
-function Header() {
+type HeaderProps = {
+    lang: string;
+    setLang: (lang: "es" | "en") => void;
+};
+
+function Header({ lang, setLang }: HeaderProps) {
     const [theme, setTheme] = useState<"dark" | "light">("dark");
 
     function toggleTheme() {
@@ -26,10 +31,24 @@ function Header() {
                 <Navbar.Toggle aria-controls="header-navbar-nav" />
                 <Navbar.Collapse id="header-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#projects">Proyectos</Nav.Link>
-                        <Nav.Link href="#experience">Experiencia</Nav.Link>
-                        <Nav.Link href="#formacion">Formacion</Nav.Link>
-                        <Nav.Link href="#about">Acerca de Mi</Nav.Link>
+                        <Nav.Link href="#projects">
+                            {lang === "es" ? "Proyectos" : "My Projects"}
+                        </Nav.Link>
+                        <Nav.Link href="#experience">
+                            {lang === "es" ? "Experiencia" : "My Experience"}
+                        </Nav.Link>
+                        <Nav.Link href="#formacion">
+                            {lang === "es" ? "Formación" : "My Studies"}
+                        </Nav.Link>
+                        <Nav.Link href="#about">
+                            {lang === "es" ? "Acerca de Mí" : "About Me"}
+                        </Nav.Link>
+                        <Nav.Link
+                            onClick={() => setLang(lang === "es" ? "en" : "es")}
+                            className="text-primary fw-bold"
+                        >
+                            {lang === "es" ? "EN" : "ES"}
+                        </Nav.Link>
                         <Nav.Link onClick={toggleTheme}>
                             {theme === "dark" ? (
                                 <DarkModeIcon className="mode-toggle" />

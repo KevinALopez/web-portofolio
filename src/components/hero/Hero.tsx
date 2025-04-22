@@ -3,8 +3,15 @@ import { ReactTyped } from "react-typed";
 import hero from "../../assets/hero-gibli-image-close.png";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
+import content from "./data/content.json";
 
-function Hero() {
+type contentKey = keyof typeof content;
+
+type IHeroProps = {
+    lang: contentKey;
+};
+
+function Hero({ lang }: IHeroProps) {
     return (
         <section
             id="home"
@@ -14,25 +21,23 @@ function Hero() {
             <img src={hero} alt="Gibli style cover" className="profile-image" />
             <h1>
                 <ReactTyped
-                    strings={["¡Hola! , Soy Kevin Ayala"]}
+                    strings={[content[lang].heroTitle]}
                     typeSpeed={50}
                 />
             </h1>
             <p className="text-muted mt-3">
-                Full Stack developer, apasionado por la tecnologia, solucion de
-                problemas y con una pasion por aprender cosas nuevas.
+                {content[lang].heroIntro1}
                 <br />
-                Estoy buscando nuevas oportunidades por lo que no dudes en
-                contactar conmigo si me perfil te interesa.
+                {content[lang].heroIntro2}
             </p>
             <a
-                href="https://drive.usercontent.google.com/u/0/uc?id=1zc7oceSEZKox3OckBa7cxTNEakA3LK1j&export=download"
+                href={content[lang].cvLink}
                 className="btn btn-accent mt-4 me-2 px-4 py-2 bg-transparent border border-1 cv"
             >
                 CV
             </a>
             <a href="#projects" className="btn btn-accent mt-4 px-4 py-2">
-                Mis Proyectos
+                {content[lang].cta}
             </a>
             <motion.div
                 className="mt-5 flex justify-center"

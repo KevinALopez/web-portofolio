@@ -3,7 +3,13 @@ import "./experience.css";
 import { motion } from "motion/react";
 import experiences from "./data/experiences.json";
 
-function ExperienceList() {
+type ExperiencesKey = keyof typeof experiences;
+
+type IExperienceList = {
+    lang: ExperiencesKey;
+};
+
+function ExperienceList({ lang }: IExperienceList) {
     return (
         <motion.section
             initial={{ opacity: 0, y: 50 }}
@@ -16,9 +22,11 @@ function ExperienceList() {
             id="experience"
             className="section container"
         >
-            <h2 className="text-center">Mi Experiencia</h2>
+            <h2 className="text-center">
+                {lang === "es" ? "Mi Experiencia" : "My Experience"}
+            </h2>
             <div className="m-auto row g-4">
-                {experiences.map((experience) => {
+                {experiences[lang].map((experience) => {
                     return (
                         <ExperienceItem
                             key={experience.id}

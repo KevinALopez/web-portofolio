@@ -3,7 +3,13 @@ import "./studies-list.css";
 import studies from "./data/studies.json";
 import StudiesItem, { IStudy } from "./studies-item/StudiesItem";
 
-function StudiesList() {
+type StudiesKey = keyof typeof studies;
+
+type IStudiesListProps = {
+    lang: StudiesKey;
+};
+
+function StudiesList({ lang }: IStudiesListProps) {
     return (
         <motion.section
             initial={{ opacity: 0, y: 50 }}
@@ -16,9 +22,11 @@ function StudiesList() {
             id="formacion"
             className="section container"
         >
-            <h2 className="text-center">Mi Formacion</h2>
+            <h2 className="text-center">
+                {lang === "es" ? "Mi Formacion" : "My Studies"}
+            </h2>
             <div className="m-auto row g-4">
-                {studies.map((study) => {
+                {studies[lang].map((study) => {
                     return (
                         <StudiesItem key={study.id} study={study as IStudy} />
                     );

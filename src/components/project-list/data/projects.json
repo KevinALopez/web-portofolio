@@ -1,12 +1,26 @@
-[
-    {
-        "id": 1,
-        "title": "Expansion Alumet Pagina Web",
-        "descrption": "Mi primera pagina web hecha de manera profesional, tiene mucho que se puede mejorar pero fue la primera vez que pude aplciar lo que he estudiado de manera practica. Se puede apreciar cuanto he aprendido desde la creacion de esta pagina.",
-        "img": "src/assets/expansion-alumet-cover.png",
-        "webLink": "https://expansionalumet.com/",
-        "github": null,
-        "sourceCode": null,
-        "technologies": ["react", "typescript", "tailwind", "aws"]
-    }
-]
+{
+    "es": [
+        {
+            "id": 1,
+            "title": "Expansion Alumet Pagina Web",
+            "descrption": "Mi primera pagina web hecha de manera profesional, tiene mucho que se puede mejorar pero fue la primera vez que pude aplciar lo que he estudiado de manera practica. Se puede apreciar cuanto he aprendido desde la creacion de esta pagina.",
+            "img": "src/assets/expansion-alumet-cover.png",
+            "webLink": "https://expansionalumet.com/",
+            "github": null,
+            "sourceCode": null,
+            "technologies": ["react", "typescript", "tailwind", "aws"]
+        }
+    ],
+    "en": [
+        {
+            "id": 1,
+            "title": "Expansion Alumet Website",
+            "descrption": "My first professionally made website, it has a lot of room for improvement but it was the first time I was able to apply what I have studied in a practical way. You can see how much I have learned since the creation of this site.",
+            "img": "src/assets/expansion-alumet-cover.png",
+            "webLink": "https://expansionalumet.com/",
+            "github": null,
+            "sourceCode": null,
+            "technologies": ["react", "typescript", "tailwind", "aws"]
+        }
+    ]
+}

@@ -3,7 +3,13 @@ import "./project-list.css";
 import { motion } from "motion/react";
 import projects from "./data/projects.json";
 
-function ProjectList() {
+type ProjectsKey = keyof typeof projects;
+
+type IPojectListProps = {
+    lang: ProjectsKey;
+};
+
+function ProjectList({ lang }: IPojectListProps) {
     return (
         <motion.section
             initial={{ opacity: 0, y: 50 }}
@@ -16,13 +22,16 @@ function ProjectList() {
             id="projects"
             className="section container"
         >
-            <h2 className="text-center">Mis Proyectos</h2>
+            <h2 className="text-center">
+                {lang == "es" ? "Mis Proyectos" : "My Projects"}
+            </h2>
             <div className="m-auto row g-4">
-                {projects.map((project) => {
+                {projects[lang].map((project) => {
                     return (
                         <ProjectItem
                             key={project.id}
                             project={project as IProject}
+                            lang={lang}
                         />
                     );
                 })}

@@ -29,9 +29,10 @@ export type IProject = {
 
 type IProjectItemProps = {
     project: IProject;
+    lang: "es" | "en";
 };
 
-function ProjectItem({ project }: IProjectItemProps) {
+function ProjectItem({ project, lang }: IProjectItemProps) {
     return (
         <Card className="col-md-4 p-0">
             <div className="position-relative card-cover">
@@ -45,7 +46,7 @@ function ProjectItem({ project }: IProjectItemProps) {
                     target="_blank"
                     className="site-link btn btn-accent"
                 >
-                    Ver Proyecto
+                    {lang === "es" ? "Ver Proyecto" : "Go to Project"}
                 </Card.Link>
             </div>
             <Card.Body className="card p-3 h-100">
@@ -66,7 +67,10 @@ function ProjectItem({ project }: IProjectItemProps) {
                 </ul>
                 {project.sourceCode && (
                     <Card.Link className="github-code">
-                        <div>{icons.github} Ver Codigo</div>
+                        <div>
+                            {icons.github}{" "}
+                            {lang === "es" ? "Ver Codigo" : "Source Code"}
+                        </div>
                     </Card.Link>
                 )}
             </Card.Body>
