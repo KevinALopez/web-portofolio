@@ -47,7 +47,7 @@
             "date": "July 2024 - July 2027",
             "description": "Las personas que obtienen esta certificación tienen un conocimiento fundamental de los servicios de IT y sus usos en la nube de AWS. Han demostrado fluidez en la nube y conocimientos básicos de AWS. Los poseedores de la insignia son capaces de identificar los servicios de AWS esenciales necesarios para configurar proyectos centrados en AWS.",
             "technologies": null,
-            "badge": "src/assets/cloud-practitioner.png"
+            "badge": "/assets/cloud-practitioner.png"
         },
         {
             "id": 4,
@@ -57,7 +57,7 @@
             "date": "Jun 2024 - Present",
             "description": "Una persona con la certificación Scrum Fundamentals Certified ha completado un curso diseñado para cualquier interesado en aprender más sobre Scrum. Esta certificación demuestra que el titular comprende los conceptos clave de Scrum según lo definido en la Guía SBOK®, y tiene un entendimiento básico del funcionamiento del marco de trabajo Scrum para la entrega exitosa de proyectos.",
             "technologies": null,
-            "badge": "src/assets/scrum-fundamentals.png"
+            "badge": "/assets/scrum-fundamentals.png"
         }
     ],
     "en": [
@@ -108,7 +108,7 @@
             "date": "July 2024 - July 2027",
             "description": "Individuals who earn this certification have a fundamental understanding of IT services and their uses in the AWS cloud. They have demonstrated fluency in the cloud and basic knowledge of AWS. Badge holders are able to identify the essential AWS services needed to configure AWS-centric projects.",
             "technologies": null,
-            "badge": "src/assets/cloud-practitioner.png"
+            "badge": "/assets/cloud-practitioner.png"
         },
         {
             "id": 4,
@@ -118,7 +118,7 @@
             "date": "Jun 2024 - Present",
             "description": "A Scrum Fundamentals Certified individual has completed a course designed for anyone interested in learning more about Scrum. This certification demonstrates that the holder understands the key concepts of Scrum as defined in the SBOK® Guide, and has a basic understanding of how the Scrum framework works for successful project delivery.",
             "technologies": null,
-            "badge": "src/assets/scrum-fundamentals.png"
+            "badge": "/assets/scrum-fundamentals.png"
         }
     ]
 }
