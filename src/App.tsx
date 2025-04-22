@@ -7,10 +7,18 @@ import ExperienceList from "./components/experience-list/ExperienceList";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
 import StudiesList from "./components/studies-list/StudiesList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
     const [lang, setLang] = useState<"es" | "en">("es");
+
+    useEffect(() => {
+        const lang = window.navigator.language.slice(0, 2).toLowerCase(); // en | es
+
+        if (!(lang === "es" || lang === "en")) return;
+
+        setLang(lang);
+    }, []);
 
     return (
         <>

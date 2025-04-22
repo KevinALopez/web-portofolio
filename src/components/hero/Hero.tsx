@@ -32,6 +32,7 @@ function Hero({ lang }: IHeroProps) {
             </p>
             <a
                 href={content[lang].cvLink}
+                target="_blank"
                 className="btn btn-accent mt-4 me-2 px-4 py-2 bg-transparent border border-1 cv"
             >
                 CV

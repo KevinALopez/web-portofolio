@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./header.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DarkModeIcon from "../icons/DarkModeIcon";
 import LightModeIcon from "../icons/LightModeIcon";
 
@@ -13,6 +13,18 @@ type HeaderProps = {
 
 function Header({ lang, setLang }: HeaderProps) {
     const [theme, setTheme] = useState<"dark" | "light">("dark");
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme === "light") {
+            document.body.classList.add("light-mode");
+            setTheme("light");
+        } else {
+            document.body.classList.remove("light-mode");
+            setTheme("dark");
+        }
+    }, []);
 
     function toggleTheme() {
         const body = document.body;
