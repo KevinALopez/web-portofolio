@@ -5,10 +5,10 @@ import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import content from "./data/content.json";
 
-type contentKey = keyof typeof content;
+type ContentKey = keyof typeof content;
 
 type IHeroProps = {
-    lang: contentKey;
+    lang: ContentKey;
 };
 
 function Hero({ lang }: IHeroProps) {
@@ -18,7 +18,11 @@ function Hero({ lang }: IHeroProps) {
             className="hero text-center section"
             data-aos="fade-up"
         >
-            <img src={hero} alt="Gibli style cover" className="profile-image" />
+            <img
+                src={hero}
+                alt="Gibli style profile illustration"
+                className="profile-image"
+            />
             <h1>
                 <ReactTyped
                     strings={[content[lang].heroTitle]}
@@ -33,6 +37,7 @@ function Hero({ lang }: IHeroProps) {
             <a
                 href={content[lang].cvLink}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-accent mt-4 me-2 px-4 py-2 bg-transparent border border-1 cv"
             >
                 CV

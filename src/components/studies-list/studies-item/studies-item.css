@@ -9,9 +9,14 @@
 
 .studies-icons {
     .study-icon {
+        transition: transform 0.2s ease;
         width: 2rem;
         height: 2rem;
         color: var(--accent-color);
         margin-right: 1rem;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

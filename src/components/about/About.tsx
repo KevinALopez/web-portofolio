@@ -21,7 +21,7 @@ function About({ lang }: IAboutProps) {
             className="section container"
         >
             <h2 className="text-center">
-                {lang === "es" ? "Acerca de Mi" : "About me"}
+                {lang === "es" ? "Acerca de Mi" : "About Me"}
             </h2>
             <Container className="about-text">
                 <Row>
@@ -37,8 +37,8 @@ function About({ lang }: IAboutProps) {
                     <Col xs={12} md={6}>
                         <p className="text-muted">
                             {lang === "es"
-                                ? "Comence estudiando ingeniería electrica en la universidad pero a lo largo del camino, inspirado por mi hermano, me adentre en el mundo de la programacion y me encanto todo, desde la planeacion para la solucion de un problema hasta la implementacion, creo que el mejor trabajo se realiza cuando amas lo que haces y a mi, me encanta la tecnologia y la programacion."
-                                : "I started studying electrical engineering in college but along the way, inspired by my brother, I got into the world of programming and I loved everything, from the planning to the solution of a problem to the implementation, I believe that the best work is done when you love what you do and I love technology and programming."}
+                                ? "Soy un desarrollador full-stack con preferencia por el desarrollo backend, aunque también cuento con sólidas habilidades en front-end para dar vida a proyectos completos. Disfruto construir APIs robustas con Node.js y Express, gestionar datos con MongoDB y SQL, y trabajar con herramientas en la nube como AWS. Al mismo tiempo, tengo experiencia creando interfaces responsivas y amigables con React y Tailwind. Me apasiona la arquitectura limpia, el aprendizaje continuo y desarrollar tecnología que aporte soluciones reales."
+                                : "I’m a full-stack developer who leans towards backend development, but with strong front-end skills to bring full projects to life. I enjoy building robust APIs with Node.js and Express, managing data with MongoDB and SQL, and working with cloud tools like AWS. At the same time, I have experience creating responsive, user-friendly interfaces with React and Tailwind. I’m passionate about clean architecture, continuous learning, and building meaningful tech that solves real problems."}
                         </p>
                     </Col>
                 </Row>

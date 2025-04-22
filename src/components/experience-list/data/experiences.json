@@ -6,15 +6,15 @@
             "company": "Expansion Alumet",
             "companyLink": "https://expansionalumet.com/",
             "date": "Nov 2023 - Nov 2024",
-            "description": "Desarrolle una pagina web para una empresa con el proposito de mostrar sus servicios y productos. Utilize React, Typescript y TailwindCSS para el desarrollo del front end."
+            "description": "Desarrollé una página web para una empresa con el propósito de mostrar sus servicios y productos. Utilicé React, TypeScript y TailwindCSS para el desarrollo del front end."
         },
         {
             "id": 2,
-            "position": "Becario Cosultor Microsoft Dynamics 365 y Power Platform",
+            "position": "Becario Consultor Microsoft Dynamics 365 y Power Platform",
             "company": "Axazure",
             "companyLink": "https://www.axazure.com/",
             "date": "Abr 2024 - Jun 2024",
-            "description": "Practicas de mi formacion profesional en desarrollo de aplicaciones web. Utilice la plataforma low code de microsoft Dynamics 365 y Power Platform para el desarrollo de soluciones de negocio. Tabaje con C# y Javascript para el desarrollo de requierimientos de negocio y soluciones."
+            "description": "Prácticas de mi formación profesional en desarrollo de aplicaciones web. Utilicé la plataforma low-code de Microsoft Dynamics 365 y Power Platform para el desarrollo de soluciones de negocio. Trabajé con C# y JavaScript para el desarrollo de requerimientos de negocio y soluciones."
         }
     ],
     "en": [
@@ -24,15 +24,15 @@
             "company": "Expansion Alumet",
             "companyLink": "https://expansionalumet.com/",
             "date": "Nov 2023 - Nov 2024",
-            "description": "Developed a website for a company to showcase their services and products. Used React, Typescript and TailwindCSS for the front end development."
+            "description": "Developed a website for a company to showcase their services and products. Used React, TypeScript, and TailwindCSS for front-end development."
         },
         {
             "id": 2,
             "position": "Microsoft Dynamics 365 and Power Platform Co-consultant Trainee",
             "company": "Axazure",
             "companyLink": "https://www.axazure.com/",
-            "date": "Abr 2024 - Jun 2024",
-            "description": "Internship of my professional training in web application development. Used the low code platform of microsoft Dynamics 365 and Power Platform for the development of business solutions. Worked with C# and Javascript for the development of business requirements and solutions."
+            "date": "Apr 2024 - Jun 2024",
+            "description": "Internship as part of my professional training in web application development. Used the low-code platform of Microsoft Dynamics 365 and Power Platform to develop business solutions. Worked with C# and JavaScript to develop business requirements and solutions."
         }
     ]
 }

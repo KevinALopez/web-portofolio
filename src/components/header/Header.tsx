@@ -7,7 +7,7 @@ import DarkModeIcon from "../icons/DarkModeIcon";
 import LightModeIcon from "../icons/LightModeIcon";
 
 type HeaderProps = {
-    lang: string;
+    lang: "es" | "en";
     setLang: (lang: "es" | "en") => void;
 };
 
@@ -15,7 +15,10 @@ function Header({ lang, setLang }: HeaderProps) {
     const [theme, setTheme] = useState<"dark" | "light">("dark");
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem("theme");
+        const savedTheme = localStorage.getItem("theme") as
+            | "light"
+            | "dark"
+            | null;
 
         if (savedTheme === "light") {
             document.body.classList.add("light-mode");
@@ -26,13 +29,12 @@ function Header({ lang, setLang }: HeaderProps) {
         }
     }, []);
 
-    function toggleTheme() {
+    const toggleTheme = () => {
         const body = document.body;
-        body.classList.toggle("light-mode");
-        const mode = body.classList.contains("light-mode") ? "light" : "dark";
-        localStorage.setItem("theme", mode);
-        setTheme(mode);
-    }
+        const newMode = body.classList.toggle("light-mode") ? "light" : "dark";
+        localStorage.setItem("theme", newMode);
+        setTheme(newMode);
+    };
 
     return (
         <Navbar expand="lg" sticky="top" className="navbar">

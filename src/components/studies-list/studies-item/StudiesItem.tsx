@@ -45,37 +45,42 @@ type StudiesItemProps = {
 
 function StudiesItem({ study }: StudiesItemProps) {
     return (
-        <>
-            <Card className="p-4 gap-1 ">
-                <Card.Title className="text-primary">{study.title}</Card.Title>
-                <Card.Subtitle className="text-secondary">
-                    <Card.Link
-                        href={study.link}
-                        target="_blank"
-                        className="text-secondary"
-                    >
-                        {study.institute}
-                    </Card.Link>
-                </Card.Subtitle>
-                <Card.Text className="text-muted mb-1">{study.date}</Card.Text>
-                <Card.Text className="text-muted">
-                    {study.description}
-                </Card.Text>
+        <Card className="p-4 gap-1">
+            <Card.Title className="text-primary">{study.title}</Card.Title>
+            <Card.Subtitle className="text-secondary">
+                <Card.Link
+                    href={study.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary"
+                >
+                    {study.institute}
+                </Card.Link>
+            </Card.Subtitle>
+            <Card.Text className="text-muted mb-1">{study.date}</Card.Text>
+            <Card.Text className="text-muted">{study.description}</Card.Text>
+
+            {study.technologies && (
                 <ul className="studies-icons p-0 m-0 flex">
-                    {study.technologies &&
-                        study.technologies.map((tech) => {
-                            return (
-                                <li className="d-inline-block p-1" key={tech}>
-                                    {icons[tech]}
-                                </li>
-                            );
-                        })}
-                    {study.badge && (
-                        <Image src={study.badge} width={100} height={100} />
-                    )}
+                    {study.technologies.map((tech) => (
+                        <li className="d-inline-block p-1" key={tech}>
+                            {icons[tech]}
+                        </li>
+                    ))}
                 </ul>
-            </Card>
-        </>
+            )}
+
+            {study.badge && (
+                <div className="mt-3">
+                    <Image
+                        src={study.badge}
+                        alt={`Badge for ${study.title}`}
+                        width={100}
+                        height={100}
+                    />
+                </div>
+            )}
+        </Card>
     );
 }
 

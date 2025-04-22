@@ -1,15 +1,15 @@
 {
     "es": {
-        "heroTitle": "¡Hola! , Soy Kevin Ayala",
-        "heroIntro1": "Full Stack developer, apasionado por la tecnologia, solucion de problemas y con una pasion por aprender cosas nuevas.",
-        "heroIntro2": "Estoy buscando nuevas oportunidades por lo que no dudes en contactar conmigo si me perfil te interesa.",
+        "heroTitle": "¡Hola! Soy Kevin Ayala",
+        "heroIntro1": "Desarrollador Full Stack, apasionado por la tecnología, la solución de problemas y con una pasión por aprender cosas nuevas.",
+        "heroIntro2": "Estoy buscando nuevas oportunidades, así que no dudes en contactar conmigo si mi perfil te interesa.",
         "cvLink": "https://drive.google.com/file/d/1zc7oceSEZKox3OckBa7cxTNEakA3LK1j/view",
         "cta": "Mis Proyectos"
     },
     "en": {
         "heroTitle": "Hi, I'm Kevin Ayala",
-        "heroIntro1": "Full Stack developer, passionate about technology, problem solving and with a passion for learning new things.",
-        "heroIntro2": "I am looking for new opportunities so do not hesitate to contact me if you are interested in my profile.",
+        "heroIntro1": "Full Stack developer, passionate about technology, problem solving, and with a love for learning new things.",
+        "heroIntro2": "I am looking for new opportunities, so feel free to contact me if you are interested in my profile.",
         "cvLink": "https://drive.google.com/file/d/1x-9qoa7z_AIHHsMU7isiKG02pQaoBwEs/view",
         "cta": "My Projects"
     }

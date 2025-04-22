@@ -19,7 +19,7 @@ type IconKey = keyof typeof icons;
 export type IProject = {
     id: number;
     title: string;
-    descrption: string;
+    description: string;
     img: string;
     webLink: string;
     github: null | string;
@@ -40,6 +40,7 @@ function ProjectItem({ project, lang }: IProjectItemProps) {
                     variant="top"
                     src={project.img}
                     className="card-img"
+                    alt={project.title}
                 />
                 <Card.Link
                     href={project.github || project.webLink}
@@ -54,9 +55,9 @@ function ProjectItem({ project, lang }: IProjectItemProps) {
                     {project.title}
                 </Card.Title>
                 <Card.Text className="text-muted">
-                    {project.descrption}
+                    {project.description}
                 </Card.Text>
-                <ul className="icons p-0 m-0 flex">
+                <ul className="icons p-0 m-0 d-flex">
                     {project.technologies.map((tech) => {
                         return (
                             <li className="d-inline-block" key={tech}>
@@ -66,10 +67,14 @@ function ProjectItem({ project, lang }: IProjectItemProps) {
                     })}
                 </ul>
                 {project.sourceCode && (
-                    <Card.Link className="github-code">
+                    <Card.Link
+                        href={project.sourceCode}
+                        className="github-code"
+                        target="_blank"
+                    >
                         <div>
                             {icons.github}{" "}
-                            {lang === "es" ? "Ver Codigo" : "Source Code"}
+                            {lang === "es" ? "Ver Código" : "Source Code"}
                         </div>
                     </Card.Link>
                 )}

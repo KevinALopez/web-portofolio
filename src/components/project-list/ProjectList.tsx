@@ -23,7 +23,7 @@ function ProjectList({ lang }: IPojectListProps) {
             className="section container"
         >
             <h2 className="text-center">
-                {lang == "es" ? "Mis Proyectos" : "My Projects"}
+                {lang === "es" ? "Mis Proyectos" : "My Projects"}
             </h2>
             <div className="m-auto row g-4">
                 {projects[lang].map((project) => {

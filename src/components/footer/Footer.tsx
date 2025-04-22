@@ -14,7 +14,8 @@ function Footer() {
                         <a
                             href="https://github.com/KevinALopez"
                             target="_blank"
-                            aria-label="Github"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
                         >
                             <GitHubIcon className="icon" />
                         </a>
@@ -23,6 +24,7 @@ function Footer() {
                         <a
                             href="https://www.linkedin.com/in/kayalalopez"
                             target="_blank"
+                            rel="noopener noreferrer"
                             aria-label="LinkedIn"
                         >
                             <LinkedInIcon className="icon" />
