@@ -11,12 +11,20 @@ function Footer() {
                 </div>
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li className="ms-3">
-                        <a href="#" aria-label="Github">
+                        <a
+                            href="https://github.com/KevinALopez"
+                            target="_blank"
+                            aria-label="Github"
+                        >
                             <GitHubIcon className="icon" />
                         </a>
                     </li>
                     <li className="ms-3">
-                        <a href="#" aria-label="LinkedIn">
+                        <a
+                            href="https://www.linkedin.com/in/kayalalopez"
+                            target="_blank"
+                            aria-label="LinkedIn"
+                        >
                             <LinkedInIcon className="icon" />
                         </a>
                     </li>
