@@ -1,0 +1,17 @@
+.text-muted {
+    color: var(--muted-color) !important;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.studies-icons {
+    .study-icon {
+        width: 2rem;
+        height: 2rem;
+        color: var(--accent-color);
+        margin-right: 1rem;
+    }
+}

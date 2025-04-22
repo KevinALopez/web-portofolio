@@ -28,7 +28,8 @@ function Header() {
                     <Nav className="ms-auto">
                         <Nav.Link href="#projects">Proyectos</Nav.Link>
                         <Nav.Link href="#experience">Experiencia</Nav.Link>
-                        <Nav.Link href="#about">Acerca de mi</Nav.Link>
+                        <Nav.Link href="#formacion">Formacion</Nav.Link>
+                        <Nav.Link href="#about">Acerca de Mi</Nav.Link>
                         <Nav.Link onClick={toggleTheme}>
                             {theme === "dark" ? (
                                 <DarkModeIcon className="mode-toggle" />

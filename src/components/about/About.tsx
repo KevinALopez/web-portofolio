@@ -32,9 +32,9 @@ function About() {
                         <p className="text-muted">
                             Comence estudiando ingeniería electrica en la
                             universidad pero a lo largo del camino, inspirado
-                            por ver a mi hermano trabajar, me adentre en el
-                            mundo de la programacion y me encanto todo, desde la
-                            planeacion para la solucion de un problema hasta la
+                            por mi hermano, me adentre en el mundo de la
+                            programacion y me encanto todo, desde la planeacion
+                            para la solucion de un problema hasta la
                             implementacion, creo que el mejor trabajo se realiza
                             cuando amas lo que haces y a mi, me encanta la
                             tecnologia y la programacion.

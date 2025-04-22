@@ -6,6 +6,7 @@ import ProjectList from "./components/project-list/ProjectList";
 import ExperienceList from "./components/experience-list/ExperienceList";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
+import StudiesList from "./components/studies-list/StudiesList";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Hero />
             <ProjectList />
             <ExperienceList />
+            <StudiesList />
             <About />
             <Footer />
         </>

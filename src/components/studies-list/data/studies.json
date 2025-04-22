@@ -1,0 +1,61 @@
+[
+    {
+        "id": 1,
+        "title": "Full Stack Developer",
+        "institute": "UpgradeHub",
+        "link": "https://www.upgrade-hub.com/bootcamp/curso-full-stack-developer/",
+        "date": "Nov 2024 - Feb 2025",
+        "description": "Formacion intensiva en diferentes technologias para el desarrollo de una aplicacion web completa desde todo lo que es front hasta todo lo necesario para la creacion de un back completo.",
+        "technologies": [
+            "html",
+            "css",
+            "javascript",
+            "angular",
+            "git",
+            "bootstrap",
+            "mysql",
+            "mongodb",
+            "express",
+            "node"
+        ],
+        "badge": null
+    },
+    {
+        "id": 2,
+        "title": "Desarrollo de Aplicaciones Web",
+        "institute": "UNIR FP",
+        "link": "https://unirfp.unir.net/ingenieria-y-tecnologia/grado-superior-daw/",
+        "date": "Sept 2022 - Jun 2024",
+        "description": "Formacion profesional para el desarrollo y mantenimiento de aplicaciones webs con diferentes tecnologias.",
+        "technologies": [
+            "html",
+            "css",
+            "javascript",
+            "java",
+            "git",
+            "mysql",
+            "mongodb"
+        ],
+        "badge": null
+    },
+    {
+        "id": 3,
+        "title": "Certificacion Cloud Practitioner AWS",
+        "institute": "AWS Certified",
+        "link": "https://www.credly.com/badges/ae02b53c-78ec-4bc0-8fae-8154886e0b8d/linked_in_profile",
+        "date": "July 2024 - July 2027",
+        "description": "Las personas que obtienen esta certificación tienen un conocimiento fundamental de los servicios de IT y sus usos en la nube de AWS. Han demostrado fluidez en la nube y conocimientos básicos de AWS. Los poseedores de la insignia son capaces de identificar los servicios de AWS esenciales necesarios para configurar proyectos centrados en AWS.",
+        "technologies": null,
+        "badge": "src/assets/cloud-practitioner.png"
+    },
+    {
+        "id": 4,
+        "title": "Certificacion SRUM Fundamentals",
+        "institute": "SRUM Study",
+        "link": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1037532",
+        "date": "Jun 2024 - Present",
+        "description": "Una persona con la certificación Scrum Fundamentals Certified ha completado un curso diseñado para cualquier interesado en aprender más sobre Scrum. Esta certificación demuestra que el titular comprende los conceptos clave de Scrum según lo definido en la Guía SBOK®, y tiene un entendimiento básico del funcionamiento del marco de trabajo Scrum para la entrega exitosa de proyectos.",
+        "technologies": null,
+        "badge": "src/assets/scrum-fundamentals.png"
+    }
+]

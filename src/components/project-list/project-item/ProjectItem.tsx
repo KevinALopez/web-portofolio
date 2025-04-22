@@ -55,9 +55,13 @@ function ProjectItem({ project }: IProjectItemProps) {
                 <Card.Text className="text-muted">
                     {project.descrption}
                 </Card.Text>
-                <ul className="icons p-0 m-0 flex ">
+                <ul className="icons p-0 m-0 flex">
                     {project.technologies.map((tech) => {
-                        return icons[tech];
+                        return (
+                            <li className="d-inline-block" key={tech}>
+                                {icons[tech]}
+                            </li>
+                        );
                     })}
                 </ul>
                 {project.sourceCode && (
